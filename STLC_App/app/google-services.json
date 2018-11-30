@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "496189093131",
+    "firebase_url": "https://stlcapp-7280e.firebaseio.com",
+    "project_id": "stlcapp-7280e",
+    "storage_bucket": "stlcapp-7280e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496189093131:android:99723ba0f6f7ebd6",
+        "android_client_info": {
+          "package_name": "kr.ac.hansung.cse.stlc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496189093131-50cf2abh2llfq258u1umnpe9608mf9ju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.ac.hansung.cse.stlc",
+            "certificate_hash": "79ddeae6b6dcac64a7a29aed7bd3753a0c43cd38"
+          }
+        },
+        {
+          "client_id": "496189093131-5k8b0lvnlnli2hsk9gn2asd8g8c6f0uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzYTk2mh24GpjfwG-qAn_V3ZrVK-07rIw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496189093131-5k8b0lvnlnli2hsk9gn2asd8g8c6f0uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

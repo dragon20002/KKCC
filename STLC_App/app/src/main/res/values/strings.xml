@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">STLC</string>
+
+    <string name="dialog_confirm">확인</string>
+</resources>
