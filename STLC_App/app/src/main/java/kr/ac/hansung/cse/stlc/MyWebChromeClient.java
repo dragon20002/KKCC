@@ -1,6 +1,5 @@
 package kr.ac.hansung.cse.stlc;
 
-import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
@@ -13,13 +12,7 @@ public class MyWebChromeClient extends WebChromeClient {
         new AlertDialog.Builder(view.getContext())
                 .setTitle("경고")
                 .setMessage(message)
-                .setPositiveButton(android.R.string.ok,
-                        new AlertDialog.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                result.confirm();
-                            }
-                        })
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> result.confirm())
                 .setCancelable(false)
                 .create()
                 .show();
@@ -31,20 +24,8 @@ public class MyWebChromeClient extends WebChromeClient {
         new AlertDialog.Builder(view.getContext())
                 .setTitle("알림")
                 .setMessage(message)
-                .setPositiveButton("네",
-                        new AlertDialog.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                result.confirm();
-                            }
-                        })
-                .setNegativeButton("아니오",
-                        new AlertDialog.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                result.cancel();
-                            }
-                        })
+                .setPositiveButton("네", (dialog, which) -> result.confirm())
+                .setNegativeButton("아니오", (dialog, which) -> result.cancel())
                 .setCancelable(false)
                 .create()
                 .show();

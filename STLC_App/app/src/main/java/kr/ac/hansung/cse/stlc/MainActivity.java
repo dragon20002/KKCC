@@ -1,6 +1,5 @@
 package kr.ac.hansung.cse.stlc;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +8,7 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
-    public static String HOME_URL = "http://13.125.115.128:8080/STLC"; //"http://192.168.0.200:8080/STLC";
+    public static String HOME_URL = "http://13.209.193.98:8080/STLC";
 
     private ProgressBar progressBar;
     private WebView webView;
@@ -47,20 +46,8 @@ public class MainActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle("종료")
                 .setMessage("종료하시겠습니까?")
-                .setPositiveButton("네",
-                        new AlertDialog.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                MainActivity.super.onBackPressed();
-                            }
-                        })
-                .setNegativeButton("아니오",
-                        new AlertDialog.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        })
+                .setPositiveButton("네", (dialog, which) -> MainActivity.super.onBackPressed())
+                .setNegativeButton("아니오", (dialog, which) -> dialog.cancel())
                 .create().show();
     }
 }

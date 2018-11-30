@@ -3,9 +3,7 @@ package kr.ac.hansung.cse.stlc;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
-import android.view.View;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class FcmDialogActivtiy extends Activity {
@@ -21,18 +19,13 @@ public class FcmDialogActivtiy extends Activity {
         String msg = getIntent().getStringExtra("message");
 
         // TextView
-        TextView fcmMsgTextView = (TextView)findViewById(R.id.textView);
+        TextView fcmMsgTextView = findViewById(R.id.textView);
         fcmMsgTextView.setMovementMethod(new ScrollingMovementMethod());
         fcmMsgTextView.setText(msg);//도착 지하철정보 설정
 
         // Button
-        TextView button = (TextView) findViewById(R.id.confirmButton);
-        button.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        TextView button = findViewById(R.id.confirmButton);
+        button.setOnClickListener(view -> finish());
     }
 
 }
