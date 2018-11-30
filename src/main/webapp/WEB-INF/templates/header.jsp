@@ -24,7 +24,7 @@
 
 	<div class="row" align="right">
 		<div class="col-md-2"><b>팀명</b> KKCC</div>
-		<div class="col-md-5"><b>팀원</b> 조성윤 김민우 김수완 채준범</div>
+		<div class="col-md-5"><b>팀원</b> 조성윤 김민우 조용훈</div>
 		<div class="col-md-4"><b>지도교수</b> 김성동 교수님</div>
 	</div>
 </header>

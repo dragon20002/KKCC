@@ -53,7 +53,7 @@
 		    <artifactId>hibernate-validator</artifactId>
 		    <version>6.0.8.Final</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
