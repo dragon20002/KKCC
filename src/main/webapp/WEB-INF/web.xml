@@ -25,6 +25,14 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
   <filter>
+  	<filter-name>etagFilter</filter-name>
+  	<filter-class>org.springframework.web.filter.ShallowEtagHeaderFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>etagFilter</filter-name>
+  	<url-pattern>/resources/images/*</url-pattern>
+  </filter-mapping>
+  <filter>
     <filter-name>encodingFilter</filter-name>
     <filter-class>
         org.springframework.web.filter.CharacterEncodingFilter

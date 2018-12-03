@@ -36,6 +36,7 @@
 		<security:form-login login-page="/login" />
 		<security:logout />
 		<security:csrf request-matcher-ref="csrfRequestMatcher" />
+		<security:headers disabled="true"></security:headers>
 	</security:http>
 
 </beans>

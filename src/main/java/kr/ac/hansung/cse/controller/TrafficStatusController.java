@@ -94,6 +94,7 @@ public class TrafficStatusController {
 			}
 			String[] textDatas = text.split(" ");
 			String imgPath = FILE_DIR + "/" + id + EWSN[i] + textDatas[0] + "_result.jpg"; //이미지 경로 찾기
+
 			file = new File(request.getServletContext().getRealPath("/resources/files") + "/" + id + EWSN[i] + textDatas[0] + "_result.jpg");
 			if (!file.exists())
 				continue;
